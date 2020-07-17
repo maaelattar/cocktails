@@ -13,7 +13,6 @@ export default function SingleCocktail() {
 					`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
 				);
 				const data = await response.json();
-				console.log('data', data);
 				if (data.drinks) {
 					const {
 						strDrink: name,
@@ -37,8 +36,6 @@ export default function SingleCocktail() {
 						strIngredient5,
 					];
 
-					console.log('ingredients', ingredients);
-
 					const newCocktail = {
 						name,
 						image,
@@ -48,7 +45,6 @@ export default function SingleCocktail() {
 						instructions,
 						ingredients,
 					};
-					console.log('newCocktail', newCocktail);
 					setCocktail(newCocktail);
 				} else {
 					setCocktail(null);
