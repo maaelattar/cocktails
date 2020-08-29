@@ -1,15 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import AppTitle from "../ui/AppTitle";
+import AppLink from "../ui/AppLink";
 
 export default function Error() {
-	return (
-		<section className='error-page section'>
-			<div className='error-container'>
-				<h1>oops, it's a dead end</h1>
-				<Link to='/' className='btn btn-primary'>
-					back home
-				</Link>
-			</div>
-		</section>
-	);
+  return (
+    <div className="flex flex-col">
+      <AppTitle title="oops, it's a dead end" />
+      <AppLink name="back home" destination="/" />
+    </div>
+  );
 }

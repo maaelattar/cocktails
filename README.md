@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Cocktails
 
-## Available Scripts
+An application used to search for cocktails and view more details about them.
 
-In the project directory, you can run:
+user can search for a drink or cocktail by name and get a list of drinks that match his search keywords
 
-### `yarn start`
+**_Live Demo: [https://maa-cocktails.netlify.app/](https://maa-cocktails.netlify.app)_**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Screen Shot(s)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- View Cocktails Landing Page
 
-### `yarn test`
+  - ![ Cocktail View ](https://res.cloudinary.com/m-a-a/image/upload/v1598631008/cocktail_view_yujiwg.gif)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Cocktail Details Page
 
-### `yarn build`
+  - ![ Cocktail Details ](https://res.cloudinary.com/m-a-a/image/upload/v1598630200/cocktail_detail_hspyfr.gif)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Search for a Cocktail
+  - ![ Cocktail Search ](https://res.cloudinary.com/m-a-a/image/upload/v1598675421/cocktail_search_vujvxe.gif)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Installation and Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-### `yarn eject`
+Installation:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm install`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Start Server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To Visit App:
 
-## Learn More
+`localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Reflection
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Originally I wanted to build an application that fetches data from external api and show it to the user, I started building minimal ui components like AppTitle, AppNavLinks and cocktail cards to feed api data into it then added search functionality. I started this process by using the `create-react-app` boilerplate, then adding `react-router-5.2` and `tailwindcss`.
 
-### Code Splitting
+At the end of the day, the technologies implemented in this project are:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- React
+- React-Router-Dom 5.2
+- TailwindCSS
+- and a significant amount of JSX
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes.
